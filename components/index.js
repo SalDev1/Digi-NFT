@@ -1,0 +1,10 @@
+export { default as Header } from "../components/Header";
+export { default as Hero } from "../components/Hero";
+export { default as NFTCard } from "../components/NFTCard";
+export { default as NFTImage } from "./nft/NFTImage";
+export { default as GeneralDetails } from "./nft/GeneralDetails";
+export { default as ItemActivity } from "./nft/ItemActivity";
+export { default as Purchase } from "./nft/Purchase";
+export { default as Footer } from "./Footer";
+export { default as MidSection } from "./MidSection";
+export { default as Drops } from "./Drops";

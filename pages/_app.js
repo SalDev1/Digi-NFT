@@ -1,7 +1,30 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import {ThirdwebWeb3Provider} from "@3rdweb/hooks";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+
+/*
+  The chain Id represents the Rinkeby network
+  The injected connector is a web3 connection network used by MetaMask.
+*/
+
+
+// Building our chains;
+const supportedChainIds = [4];
+// We will be injecting our metamask into this.
+const connectors = {
+  injected : {},
 }
 
-export default MyApp
+function MyApp({ Component, pageProps }) {
+  return (
+    <ThirdwebWeb3Provider 
+      supportedChainIds={supportedChainIds}
+      connectors={connectors}
+    >
+      <Component {...pageProps} />
+    </ThirdwebWeb3Provider>
+  );
+}
+
+export default MyApp;

@@ -1,0 +1,37 @@
+ // The thirdweb is the platform which will help us to connect and communicate with the blockchain.
+  
+  // https://faucets.chain.link/rinkeby  // To gain test ethers.
+
+  You are setting up thirdweb , because if there are some of your nfts and someone buys it , you will royalties and the account 
+  that you have created in the thirdweb will be gathering all of your royalties.
+
+  We are creating a marketplace for digital assets.
+
+  If some ones pays for our nft , then we will be getting the 3% of the price.
+
+  In order to give admin address to your address, keep adding their wallet address.
+
+  Once you have mint your nft on the thirdweb app , then list your nft in the 
+  nft marketplace.
+
+Welcome to the Thirdweb ReactnHooks Library. This package provides you with extensible react hooks to 
+handle the web3 side of your app. 
+// This will helps us to integrate our metamask wallet to the our web application.
+// react-hot-toast
+
+//Alchemy ==> Blockchain API and Node Service.
+
+
+//Type this code to fetch the market items you have stored manually in the Sanity CMS Server.
+*[_type == "marketItems" && contractAddress == "0xb48d160bAAD486eeAC21f0Df81A2f582FD5D84Fe"] 
+{
+  "imageUrl" : profileImage.asset->url,
+  "bannerImageUrl": bannerImage.asset->url,
+  volumeTraded,
+  createdBy,
+  contractAddress,
+  "creator":createdBy->userName,
+  title , floorPrice,
+  "allOwners":owners[]->,
+  description
+}
